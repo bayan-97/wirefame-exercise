@@ -1,37 +1,57 @@
 
+a{
+    text-decoration: none;
+   color:#ddd;
+  
+
+}
+
 nav ul  {
     display: flex;
-    background-color: gray;
-   
-      padding: 1px; 
-   
-    
-}
-nav ul   *  {
     text-decoration: none;
      list-style: none;
      margin-right:22px;
-     margin-top: 30px;
-     /* padding-top: 25px; */
      color: white;
+
    
      
  }
+ nav ul li {
+     display: flex;
+     margin-right: 30px;
+     align-items: center;
+
+ }
+ nav ul li a{
+    display: flex;
+    align-items: center;
+ }
+ nav ,footer{
+     background-color: grey;
+
+ }
+
+ nav{
+     padding:30px 0;
+ }
+
     
 
-nav ul img{
+ nav  img{
    
-    margin-left:190px;
-    margin-top: -24px;
-    padding-bottom: 7px;
+  margin-right: 30px;
   
     
-}
+} 
 /* main */
-#continer{
+.continer{
+    display: flex;
     width: 960px;
     margin: 0 auto;
     /* padding-right: 60px; */
+}
+main section:nth-of-type(1){
+    padding-top: 30px;
 }
 .ad {
 display:flex;
@@ -44,48 +64,47 @@ padding-bottom: 30px;
 .an  {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 30px;
+}
+.an div:nth-of-type(2){
+    padding-left: 30px;
+    
+   
 }
 .an   p{
-    width: 75%;
-    height: 280px;
-    overflow:hidden;
-   margin-left:26px ;
-   margin-top: 3px;
+   
+    height:calc(400px - 30px - 36px );
+    overflow-y:scroll;
+    margin-bottom: 40px;
+ 
+   
 }
 h6 {
-    margin-left: 25px;
-   margin-bottom: 0;
+  
+  
    font-size: 15px;
    font-weight: lighter;
    font-family: sans-serif;
 }
  main .an a {
-    margin-left: 25px;
-    background-image: url("https://dummyimage.com/350x450/000/fff.gif"); 
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    align-items: center;
-    padding-bottom: 5%;
-    margin-top: 49px;
-    padding-top: 9px;
-    padding-left: 25px;
-    padding-right: 30px;
+   background-color:black;
+   color:white;
+   padding: 10px 20px;
+   transition: .350s background-color ease ;
+  
+
 }
  .an a:hover {
-    color:transparent;
+   background-color: gray;
     
   }
   /* footer */
   footer{
       
-    background-color: grey;
-    border-width: 990px; 
-      border: 1px ;
     padding: 40px;
-    margin-left: 60px;
-    margin-right:80px;
-    margin-top: 10px;
+   margin-left: 45px;
+   margin-right: 45px;
+    
 }
       
  
